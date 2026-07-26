@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ctex}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% 页面边距优化
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+% 章节样式美化
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+% 取消首行缩进并设置段落间距
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+\title{\textbf{定积分与不定积分重要公式知识点}}
+\author{25级哲学班\textbf{阿苏塔卡}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty} % 首页不显示页码
+
+\section{基本积分公式表 (核心基石)}
+以下为常见的不定积分基本公式（注：为简化表达，以下公式省略了积分常数 $C$，实际书写时务必加上）。
+
+\subsection{幂函数、指数函数与对数形式}
+\begin{table}[h]
+\centering
+\begin{tabular}{ll|ll}
+\toprule
+\textbf{被积函数 $f(x)$} & \textbf{不定积分 $\int f(x)dx$} & \textbf{被积函数 $f(x)$} & \textbf{不定积分 $\int f(x)dx$} \\
+\midrule
+$x^\mu \ (\mu \neq -1)$ & $\dfrac{x^{\mu+1}}{\mu+1}$ & $\dfrac{1}{x}$ & $\ln|x|$ \\
+$e^x$ & $e^x$ & $a^x$ & $\dfrac{a^x}{\ln a}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{三角函数形式}
+\begin{table}[h]
+\centering
+\begin{tabular}{ll|ll}
+\toprule
+\textbf{被积函数 $f(x)$} & \textbf{不定积分 $\int f(x)dx$} & \textbf{被积函数 $f(x)$} & \textbf{不定积分 $\int f(x)dx$} \\
+\midrule
+$\sin x$ & $-\cos x$ & $\cos x$ & $\sin x$ \\
+$\tan x$ & $-\ln|\cos x|$ & $\cot x$ & $\ln|\sin x|$ \\
+$\sec x$ & $\ln|\sec x + \tan x|$ & $\csc x$ & $\ln|\csc x - \cot x|$ \\
+$\sec^2 x$ & $\tan x$ & $\csc^2 x$ & $-\cot x$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{反三角函数相关形式 (高频易错)}
+\begin{table}[h]
+\centering
+\begin{tabular}{ll|ll}
+\toprule
+\textbf{被积函数 $f(x)$} & \textbf{不定积分 $\int f(x)dx$} & \textbf{被积函数 $f(x)$} & \textbf{不定积分 $\int f(x)dx$} \\
+\midrule
+$\dfrac{1}{1+x^2}$ & $\arctan x$ & $\dfrac{1}{\sqrt{1-x^2}}$ & $\arcsin x$ \\
+$\dfrac{1}{a^2+x^2}$ & $\dfrac{1}{a} \arctan \dfrac{x}{a}$ & $\dfrac{1}{\sqrt{a^2-x^2}}$ & $\arcsin \dfrac{x}{a}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{不定积分的两大核心积分方法}
+
+\subsection{第一类换元法 (凑微分法)}
+利用微分形式的不变性，若 $g'(x)dx = dg(x)$，则：
+\[ \int f[g(x)]g'(x)dx = \int f[g(x)]dg(x) = F[g(x)] + C \]
+
+\subsection{第二类换元法 (去根式代换)}
+当被积函数中含有根式时，常用三角代换消除根式：
+\begin{itemize}[leftmargin=1.5em, itemsep=0.1em]
+    \item 含有 $\sqrt{a^2-x^2}$：设 $x = a\sin t$ \quad ($\cos^2 t = 1 - \sin^2 t$)
+    \item 含有 $\sqrt{a^2+x^2}$：设 $x = a\tan t$ \quad ($\sec^2 t = 1 + \tan^2 t$)
+    \item 含有 $\sqrt{x^2-a^2}$：设 $x = a\sec t$ \quad ($\tan^2 t = \sec^2 t - 1$)
+\end{itemize}
+
+\subsection{分部积分法}
+源自两函数乘积的求导法则，适用于不同类型函数相乘的积分：
+\[ \int u dv = uv - \int v du \]
+\textbf{选 $u$ 口诀由先到后反、对、幂、三、指}（反三角函数、对数函数、幂函数、三角函数、指数函数）。排在前面的函数优先设为 $u$。
+
+\section{定积分的重要定理与计算捷径}
+
+\subsection{微积分基本定理 (牛顿--莱布尼茨公式)}
+连接定积分与不定积分的桥梁。若 $F'(x) = f(x)$，则：
+\[ \int_{a}^{b} f(x) dx = F(b) - F(a) = \left. F(x) \right|_a^b \]
+
+\subsection{对称区间上的奇偶性转化}
+若积分区间关于原点对称 $[-a, a]$：
+\begin{itemize}[leftmargin=1.5em]
+    \item 若 $f(x)$ 为\textbf{奇函数}：$\int_{-a}^{a} f(x) dx = 0$
+    \item 若 $f(x)$ 为\textbf{偶函数}：$\int_{-a}^{a} f(x) dx = 2 \int_{0}^{a} f(x) dx$
+\end{itemize}
+
+\subsection{周期函数的定积分性质}
+若 $f(x)$ 是以 $T$ 为周期的连续函数，则在任一周期长的区间上，其定积分值相等：
+\[ \int_{a}^{a+T} f(x)dx = \int_{0}^{T} f(x)dx \]
+
+\subsection{区间再现公式 (非常重要)}
+在处理原函数极难直接求解的定积分时有妙用（如含有三角函数变换）：
+\[ \int_{a}^{b} f(x) dx = \int_{a}^{b} f(a+b-x) dx \]
+
+\section{变限积分求导公式 (绝对高频考点)}
+若积分的上限和下限都是自变量 $x$ 的函数，对其求导的通用公式为：
+\[ \frac{d}{dx} \left[ \int_{\psi(x)}^{\phi(x)} f(t) dt \right] = f[\phi(x)] \cdot \phi'(x) - f[\psi(x)] \cdot \psi'(x) \]
+\textbf{核心记忆法：} 代入上限 $\times$ 上限的导数 $-$ 代入下限 $\times$ 下限的导数。
+
+\end{document}

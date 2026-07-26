@@ -16,6 +16,30 @@
 ## 为什么要建立本仓库
 - 很多本科生在学习过程中可能会感觉到理解吃力、期末不知道怎么复习以及无意中忽视了学院及学校的相关文件，本仓库通过将已有资料进行整合，可以帮助广大哲学学院同学们减轻学习压力，高效学习。
 - 目前，安徽大学校内已知计算机科学与技术学院、人工智能学院、集成电路学院、电子信息工程学院等都已经建立相关仓库。虽然这是一个偏理工科的平台，但是我认为哲学学院也可以充分利用本平台，实现资源共享，服务同学。
+## 如何全部下载本仓库内容
+> 此处全文引用安徽大学人工智能学院README文档中的有关教程
+#### 全部下载
+![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/全部下载.gif)
+#### 单个文件下载
+这种方法需要直接点击每个文件，手动下载比较麻烦
+>以上两种方法都不需要github账号
+
+![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/手动下载.gif)
+#### 部分下载
+1. 在浏览器插件里面下载**GitZip for github**
+   >推荐使用Edge或Chrome浏览器
+
+   ![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/扩展.gif)
+2. 获取token，输入密码后会自动跳转回来，此时token就已经自动填好了<br>
+   >注意:此步骤需要你有一个github账号，如果不进行此步，该插件也是可以使用，但是次数限制比较严重，可能无法完成正常下载<br>
+
+   ![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/token.gif)
+3. 刷新一下仓库界面，此时文件夹或文件前面会有勾选框，勾选你要下载的文件，然后点击右下角箭头位置，即可完成下载
+   ![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/下载.gif)
+#### Git克隆（进阶方法）
+```git
+git clone https://github.com/Asutaka233/AHU-Philosophy-Repository.git
+```
 ## 说明
 - 该仓库将开放权限，欢迎哲学学院任何同学参与到本仓库的维护建设之中，您投稿的每一份资料都有可能帮助到下面几届甚至数十届的同学，并将这份共享精神传承下去。
 - 我们欢迎任何同学传播本仓库内容，但是**绝对禁止利用本仓库内容来进行牟利**，本仓库内容全部开源免费，不得用于从事商业行为。
