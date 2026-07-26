@@ -19,23 +19,23 @@
 ## 如何全部下载本仓库内容
 > 此处全文引用安徽大学人工智能学院README文档中的有关教程
 #### 全部下载
-![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/全部下载.gif)
+![](/gif/全部下载.gif)
 #### 单个文件下载
 这种方法需要直接点击每个文件，手动下载比较麻烦
 >以上两种方法都不需要github账号
 
-![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/手动下载.gif)
+![](/gif/手动下载.gif)
 #### 部分下载
 1. 在浏览器插件里面下载**GitZip for github**
    >推荐使用Edge或Chrome浏览器
 
-   ![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/扩展.gif)
+   ![](/gif/扩展.gif)
 2. 获取token，输入密码后会自动跳转回来，此时token就已经自动填好了<br>
    >注意:此步骤需要你有一个github账号，如果不进行此步，该插件也是可以使用，但是次数限制比较严重，可能无法完成正常下载<br>
 
-   ![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/token.gif)
+   ![](/gif/token.gif)
 3. 刷新一下仓库界面，此时文件夹或文件前面会有勾选框，勾选你要下载的文件，然后点击右下角箭头位置，即可完成下载
-   ![](https://github.com/DylanAo/AHU-AI-Repository/tree/main/image/下载.gif)
+   ![](/gif/下载.gif)
 #### Git克隆（进阶方法）
 ```git
 git clone https://github.com/Asutaka233/AHU-Philosophy-Repository.git
