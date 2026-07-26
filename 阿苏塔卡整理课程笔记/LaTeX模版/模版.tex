@@ -1,0 +1,73 @@
+\documentclass[a4paper]{ctexart}
+\usepackage{authblk}
+\usepackage{titlesec}
+\usepackage[superscript]{cite}
+\usepackage{fancyhdr}
+\usepackage[runin]{abstract}
+\usepackage{geometry}
+\usepackage{setspace}
+\renewcommand{\abstractnamefont}{\normalsize\bfseries}
+\linespread{1.5}
+\geometry{scale=0.75}
+\setmainfont{Times New Roman}
+\setCJKmainfont[BoldFont={SimHei}]{SimSun}
+\setlength{\absleftindent}{0pt}
+\setlength{\abstitleskip}{-2em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{}
+\fancyhead[C]{\thepage}
+\fancyhead[R]{}
+\ctexset{
+    section={   
+        name={,、},
+        number={\chinese{section}},
+        aftername={}
+    },
+    subsection={   
+        name={,.},
+        number={\arabic{subsection}},
+        indent = {2em},
+        aftername={\quad}
+    }
+}
+\title{\textbf{标题}}
+\author{\textbf{作者}}
+\affil{（学号：xxx，班级，单位）}
+\date{}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+\normalsize\setstretch{1.25}\quad{文本内容}
+\end{abstract}
+\begin{description}
+\setlength{\leftskip}{2em}
+\item[关键词] 关键词1；关键词2；关键词3
+\end{description}
+\section{引言}
+\par 文本内容
+\section{章节1}
+\subsection{小章节}
+\par 文本内容\cite{1}
+\section{结语}
+\par 文本内容
+\begin{thebibliography}{114514}
+\bibitem{1}Test
+\end{thebibliography}
+\begin{center}
+    \LARGE
+    \textbf{Title}
+    \\[10pt]
+    \large
+    \textbf{Author}
+    \\[8pt]
+    \large
+    (ID:, school)
+\end{center}
+\noindent\textbf{Abstract}\ content
+\begin{description}
+\setlength{\leftskip}{2em}
+\item[Keywords] keyword1; keywords2; keywords3
+\end{description}
+\end{document}
