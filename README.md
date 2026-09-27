@@ -61,6 +61,7 @@ git clone https://github.com/Asutaka233/AHU-Philosophy-Repository.git
 - [安徽大学教务处](https://jwc.ahu.edu.cn/)
 - [智慧安大](https://one.ahu.edu.cn/)
 - [安徽大学官网](https://www.ahu.edu.cn/)
+- [安大通](https://github.com/OpenAHU/AHUTong)
 - [安徽大学(AHU)计算机科学与技术学院学习资料汇总](https://github.com/TenMoons/AHU-CS-Repository)
 - [安徽大学人工智能学院资源仓库](https://github.com/DylanAo/AHU-AI-Repository)
 - [安徽大学(AHU)集成电路学院个人收集资料库](https://github.com/Tonyseth/AHU-IC-Design-personal-Repository)
